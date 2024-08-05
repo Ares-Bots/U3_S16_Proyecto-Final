@@ -1,0 +1,11 @@
+table.dataTable tbody tr.expired {
+    background-color: #f23c3c; /* Rojo pálido */
+}
+
+table.dataTable tbody tr.warning {
+    background-color: #f6f656; /* Amarillo pálido */
+}
+
+table {
+    background-color: #f6f656;
+}

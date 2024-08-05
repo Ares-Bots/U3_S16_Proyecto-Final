@@ -1,0 +1,135 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f6f9;
+}
+
+/* Estilos básicos para la tabla */
+#Cuentas {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#Cuentas th, #Cuentas td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#Cuentas tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#Cuentas tr:hover {
+    background-color: #ddd;
+}
+
+#Cuentas th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #1c6d1e;
+    color: white;
+}
+
+/* Estilos para filas con productos expirados o próximos a expirar */
+#Cuentas .expired {
+    background-color: #f68080 !important;
+}
+
+#Cuentas .warning {
+    background-color: #f7f762 !important;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: hsl(0, 0%, 20%);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.table-responsive {
+    max-height: 70vh;
+    overflow-y: auto;
+    overflow-x: auto;
+}
+
+.sidebar .nav-icon {
+    color: #c2c7d0;
+}
+
+.main-footer {
+    background-color: #343a40;
+    color: #ffffff;
+    padding: 10px 0;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+.main-footer a {
+    color: #99c5f6;
+}
+
+button.navbar-toggler {
+    margin-right: 35%;
+}
+
+.nav-link {
+    color: #d4e5fd !important;
+}
+
+.navbar-nav .navbar-text {
+    color: #ffffff !important;
+}
+
+.collapse .navbar-nav .nav-item .nav-link {
+    font-size: 14px;
+    font-weight: bold;
+    color: #ffffff !important;
+}
+
+.navbar .navbar-brand img {
+    height: 50px;
+}
+
+.navbar-nav .marg {
+    margin: 10px;
+}
+
+.log-img {
+    opacity: .9;
+    width: 55px;
+    margin-right: 10px;
+}
+
+.navbar-nav {
+    order: 1;
+}
+
+@media screen and (max-width: 1200px){
+    .navbar-brand {
+        position: absolute;
+        left: 50%;
+        top: 5px;
+        transform: translateX(-50%);
+    }
+
+    .navbar-nav {
+        order: 0;
+    }
+}
+
+@media screen and (max-width: 991px){
+    .navbar-brand {
+        position: absolute;
+        left: 50%;
+        top: 5px;
+        transform: translateX(-50%);
+    }
+
+    .navbar-nav .marg .navbar-text{
+        display: none;
+    }
+}
